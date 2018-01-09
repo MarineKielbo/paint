@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My paint</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section >
+		<h1><img id="paint" src="paint.jpg" alt="paint"></h1>
+			<div id="colors">
+				<button id="black" onclick="changeColor('black')"></button>
+				<button id="red" onclick="changeColor('red')"></button>
+				<button id="green" onclick="changeColor('green')"></button>
+				<button id="blue" onclick="changeColor('blue')"></button>
+				<button id="pink" onclick="changeColor('pink')"></button>
+				<button id="yellow" onclick="changeColor('yellow')"></button>
+				<button id="purple" onclick="changeColor('purple')"></button>
+			</div>
+
+			<div id="top">
+				<div id="size">
+				  <button onclick="changeSize('1');">x Small</button>
+				  <button onclick="changeSize('5');">Small</button>
+				  <button onclick="changeSize('10');">Med</button>
+				  <button onclick="changeSize('20');">Large</button>
+				  <button onclick="changeSize('40');">X Large</button>
+				  <button onclick="changeSize('60');">XX Large</button>
+				  <button id="white" onclick="changeColor('white')"><img src="gomme.png"></button>
+				</div>
+
+				<div id="mode">
+					<div class="but">
+					<div class="button" id="rect" name="rect"><img src='rectangle.png' alt="rectangle"></div>
+					</div>
+					<div class="but">
+					<div class="button" id="trait" name="trait"><img src='crayon.png' alt="trait"></div>
+					</div>
+					<div class="but">
+					<div class="button" id="cercle" name="cercle"><img src='cercle.png' alt="cercle"></div>
+					</div>
+					<div class="but">
+					<div class="button" id="cercle_rempli" name="cercle"><img src='cercle_rempli.png' alt="cercle rempli"></div>
+					</div>
+					<div class="but">
+					<div class="button" id="rectangle_rempli" name="rectangle_rempli"><img src='rectangle_rempli.png' alt="rectangle rempli"></div>
+					</div>
+				</div>
+			</div>	
+		
+		<div id="drawingTools">
+			<div id="otherTools">
+				<button id="clearCanvas" onclick="clearCanvas()"><img src="clear.png" alt="corbeille"></button>
+				<input type="button" id="save" value="Save"/>
+			</div>
+		</div>
+		<div id="sketch">
+			<canvas id="canvas" width="800" height="500"></canvas>
+		</div>
+	</section>
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+			  crossorigin="anonymous"></script>
+	<script src="script.js"></script>
+	<script src="mode.js"></script>
+</body>
+</html>
